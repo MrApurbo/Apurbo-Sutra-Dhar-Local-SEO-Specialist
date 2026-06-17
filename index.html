@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurbo Sutra Dhar | Local SEO Specialist & Google Maps Expert</title>
+    <meta name="description" content="Hire Apurbo Sutra Dhar, a top-rated Local SEO Specialist and Professional Freelancer. Proven results in ranking businesses #1 on Google Maps in the UK, USA, and Australia.">
+    <meta name="keywords" content="Local SEO Specialist, Google Maps Ranking, Google Business Profile Optimization, GMB Expert, Local Lead Generation, Map Pack Ranking, SEO Freelancer, White-hat Local SEO, On-Page SEO, Technical SEO, Off-Page SEO">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Apurbo Sutra Dhar",
+      "jobTitle": "Local SEO Specialist",
+      "url": "https://apurbosutradhar.com",
+      "image": "Portfolio/profile.jpg", 
+      "description": "Apurbo Sutra Dhar is a Local SEO Specialist helping small businesses improve local visibility and get found on Google Search and Google Maps.",
+      "sameAs": [
+        "https://www.linkedin.com/in/apurbo-sutra-dhar/",
+        "https://www.facebook.com/Mr.Apurbo09",
+        "https://www.instagram.com/mr.apurbo09/"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #6366f1; /* Indigo 500 */
+            --dark: #020617;    /* Slate 950 */
+            --glass: rgba(15, 23, 42, 0.7);
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--dark); color: #f8fafc; scroll-behavior: smooth; }
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
+        
+        /* Glassmorphism Utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .hero-glow {
+            background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+        }
+
+        .hover-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+        .hover-card:hover { transform: translateY(-5px); border-color: rgba(99, 102, 241, 0.5); }
+
+        /* Animations */
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        @keyframes textShimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        
+        .shimmer-text {
+            background: linear-gradient(to right, #818cf8 20%, #22d3ee 40%, #818cf8 60%, #22d3ee 80%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: textShimmer 3s linear infinite;
+        }
+
+        /* Social Spy & Button Styles */
+        .social-link {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            color: var(--brand-color);
+            text-shadow: 0 0 10px var(--brand-color);
+            transform: translateY(-2px);
+        }
+
+        .spy-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .spy-btn:hover {
+            box-shadow: 0 0 15px rgba(34,197,94,0.4);
+            border-color: #22c55e;
+        }
+        
+        .hero-btn-primary {
+            animation: pulse-green 2s infinite;
+        }
+
+        .radar-ping {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: #4ade80;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+            animation: radar 2s infinite;
+        }
+
+        @keyframes radar {
+            0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+        }
+        
+        /* Modal for Images */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            backdrop-filter: blur(5px);
+        }
+        #modalContent {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+        }
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover, .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 bg-[#020617]/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="Portfolio/logo.png" alt="Logo" class="w-10 h-10 object-contain hover:rotate-180 transition-transform duration-700">
+                <span class="font-bold text-lg tracking-tight">Apurbo <span class="text-indigo-500">Sutra Dhar</span></span>
+            </div>
+
+            <!-- Central Nav Links -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#mission" class="hover:text-white transition-colors">My Mission</a>
+                <a href="#success" class="hover:text-white transition-colors">Success Stories</a>
+            </div>
+
+            <!-- Right Side: Social Spy & Action -->
+            <div class="flex items-center gap-6">
+                
+                <!-- Social Spy Icons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="https://www.facebook.com/Mr.Apurbo09" target="_blank" class="social-link w-8 h-8 flex items-center justify-center rounded-full bg-slate-800/50 text-slate-400" style="--brand-color: #1877F2;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/apurbo-sutra-dhar/" target="_blank" class="social-link w-8 h-8 flex items-center justify-center rounded-full bg-slate-800/50 text-slate-400" style="--brand-color: #0077B5;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mr.apurbo09/" target="_blank" class="social-link w-8 h-8 flex items-center justify-center rounded-full bg-slate-800/50 text-slate-400" style="--brand-color: #E4405F;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link w-8 h-8 flex items-center justify-center rounded-full bg-slate-800/50 text-slate-400" style="--brand-color: #BD081C;">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+
+                <div class="hidden md:block w-px h-8 bg-white/10"></div>
+
+                <a href="https://wa.me/8801990234261" target="_blank" class="spy-btn relative pl-6 pr-10 py-2.5 bg-slate-800 text-white rounded-lg text-sm font-bold border border-green-500/30 group">
+                    <span class="relative z-10 flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg text-green-400"></i> WhatsApp Me
+                    </span>
+                    <span class="radar-ping"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-glow">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-900/30 border border-indigo-500/30 text-indigo-300 text-xs font-bold uppercase mb-6 tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Professional Freelancer
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    Dominate Your <br>
+                    <span class="shimmer-text">Local Market.</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-8 max-w-lg leading-relaxed">
+                    I am <strong>Apurbo Sutra Dhar</strong>, an independent Local SEO Specialist. I help businesses in the <strong>UK, USA, and Australia</strong> secure #1 rankings on Google Maps without the agency fluff.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#success" class="px-8 py-4 bg-white text-slate-900 rounded-xl font-bold hover:bg-indigo-50 transition-colors text-center border-2 border-transparent hover:border-white hover:bg-transparent hover:text-white">
+                        View Case Studies
+                    </a>
+                    <a href="https://share.google/1s0xz2GLq00MlOS0L" target="_blank" class="hero-btn-primary px-8 py-4 bg-slate-900 text-white rounded-xl font-bold border border-blue-500/50 hover:bg-blue-600/10 transition-colors flex items-center justify-center gap-2 group">
+                        <i class="fab fa-google text-xl text-blue-400 group-hover:text-white transition-colors"></i> Verified Google Profile
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center relative">
+                <div class="absolute inset-0 bg-indigo-600/20 blur-[100px] rounded-full"></div>
+                <div class="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full p-2 border-2 border-indigo-500/20">
+                    <img src="Portfolio/profile.jpg" alt="Apurbo Sutra Dhar" class="w-full h-full object-cover rounded-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Our Goal / Mission Section -->
+    <section id="mission" class="py-20 relative border-t border-white/5 bg-[#03091e]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">My Goal: Your Business Growth</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">I don't just do "SEO". I target the metrics that actually put money in your pocket.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Goal 1 -->
+                <div class="glass-panel p-8 rounded-3xl hover-card text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-indigo-500/20 transition-colors">
+                        <i class="fas fa-rocket text-3xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">#1 Rankings</h3>
+                    <p class="text-sm text-slate-400">Dominating the Map Pack so you are the first choice for locals.</p>
+                </div>
+                <!-- Goal 2 -->
+                <div class="glass-panel p-8 rounded-3xl hover-card text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-pink-500/20 transition-colors">
+                        <i class="fas fa-users text-3xl text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Real Customers</h3>
+                    <p class="text-sm text-slate-400">Attracting genuine, high-intent local people, not bots or spam.</p>
+                </div>
+                <!-- Goal 3 -->
+                <div class="glass-panel p-8 rounded-3xl hover-card text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-green-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-green-500/20 transition-colors">
+                        <i class="fas fa-phone-volume text-3xl text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Inbound Calls</h3>
+                    <p class="text-sm text-slate-400">Turning search traffic into ringing phones.</p>
+                </div>
+                <!-- Goal 4 -->
+                <div class="glass-panel p-8 rounded-3xl hover-card text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-500/20 transition-colors">
+                        <i class="fas fa-chart-line text-3xl text-amber-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">More Sales</h3>
+                    <p class="text-sm text-slate-400">Converting visibility into measurable revenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/30 border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">About Me</h2>
+            <div class="glass-panel p-8 rounded-3xl">
+                <p class="text-slate-300 leading-loose text-lg">
+                    Apurbo Sutra Dhar is a <strong>Local SEO Specialist</strong> helping small businesses improve local visibility and get found on Google Search and Google Maps. I work with business owners who struggle with low online visibility, poor map rankings or not getting enough calls despite having a good service. My work focuses on <strong>Google Business Profile optimization</strong>, local search relevance and trust signals that help Google clearly understand a business. I follow ethical, people-first SEO practices and long-term strategies—no shortcuts or spam. The goal is simple: help the right local customers find your business when they are ready to choose.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+             <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Complete Local SEO Solutions</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">A holistic approach to ranking. I optimize every signal Google looks at.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- On-Page -->
+                <div class="glass-panel p-8 rounded-3xl hover-card group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-file-code text-6xl text-indigo-500"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 text-2xl">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">On-Page SEO</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        I fine-tune your website's internal structure. From <strong>local keyword placement</strong> to optimizing meta tags and content, I ensure Google understands exactly <em>where</em> you are and <em>what</em> you do.
+                    </p>
+                </div>
+
+                <!-- Technical -->
+                <div class="glass-panel p-8 rounded-3xl hover-card group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                         <i class="fas fa-cogs text-6xl text-blue-500"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-6 text-2xl">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Technical SEO</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        The foundation of rankings. I fix the hidden errors that hold you back. By implementing <strong>Local Schema Markup</strong>, improving site speed, and ensuring mobile-friendliness, I make your site Google-proof.
+                    </p>
+                </div>
+
+                <!-- Off-Page -->
+                <div class="glass-panel p-8 rounded-3xl hover-card group relative overflow-hidden">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                         <i class="fas fa-globe text-6xl text-pink-500"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400 mb-6 text-2xl">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Off-Page SEO</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Building your authority. I secure high-quality <strong>local citations</strong> and backlinks that tell Google you are a trusted business. This is the fuel that powers your climb to the #1 spot in the Map Pack.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Certifications & Expertise</h2>
+            <div class="max-w-2xl mx-auto glass-panel p-8 rounded-3xl border border-indigo-500/20 flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2 cursor-pointer" onclick="openModal('Portfolio/certificate.jpg', 'Professional Digital Marketing Certification')">
+                    <img src="Portfolio/certificate.jpg" alt="Digital Marketing Certificate" class="rounded-xl shadow-lg border border-white/10 hover:opacity-80 transition-opacity w-full h-auto">
+                    <p class="text-center text-xs text-slate-500 mt-2"><i class="fas fa-search-plus"></i> Click to view</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl font-bold text-white mb-2">Professional Digital Marketing</h3>
+                    <div class="text-indigo-400 font-bold mb-4">Creative IT Institute</div>
+                    <p class="text-slate-400 text-sm mb-4">Completed comprehensive training with an A+ grade, mastering advanced Local SEO strategies, technical audits, and digital growth frameworks.</p>
+                    <ul class="text-sm text-slate-300 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Advanced Local SEO</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Google Maps Algorithms</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Technical Site Audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success & Portfolio Section -->
+    <section id="success" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Real Results, No Excuses</h2>
+                <p class="text-slate-400">Recent wins for international clients in competitive markets.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Case Study 1: Map Pack -->
+                <div class="glass-panel p-8 rounded-3xl hover-card group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <div class="text-xs font-bold text-indigo-400 uppercase mb-1">UK Market</div>
+                            <h3 class="text-2xl font-bold text-white">Local Service Business</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-6 text-sm">Achieved <strong>#1 Ranking</strong> in the Local Map Pack within just 30 days.</p>
+                    <div class="rounded-xl overflow-hidden border border-white/10 relative h-64 cursor-pointer" onclick="openModal('Portfolio/s1.jpg', 'Rank #1 Achievement')">
+                        <img src="Portfolio/s1.jpg" alt="Map Ranking #1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Traffic Growth -->
+                <div class="glass-panel p-8 rounded-3xl hover-card group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <div class="text-xs font-bold text-indigo-400 uppercase mb-1">Search Console Data</div>
+                            <h3 class="text-2xl font-bold text-white">Traffic Explosion</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-6 text-sm">Driven <strong>43 High-Intent Clicks</strong> and 3.85K Impressions in 28 days through semantic SEO.</p>
+                    <div class="grid grid-cols-2 gap-2 h-64">
+                        <div class="rounded-xl overflow-hidden border border-white/10 cursor-pointer" onclick="openModal('Portfolio/s2.jpg', 'GSC Click Growth')">
+                            <img src="Portfolio/s2.jpg" alt="GSC Graph 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-white/10 cursor-pointer" onclick="openModal('Portfolio/s3.jpg', 'GSC Impression Growth')">
+                            <img src="Portfolio/s3.jpg" alt="GSC Graph 2" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Growth Highlight -->
+            <div class="glass-panel p-8 lg:p-12 rounded-3xl border border-indigo-500/30 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-600/10 blur-[80px]"></div>
+                <div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
+                    <div>
+                        <div class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 rounded-lg text-xs font-bold mb-4 uppercase">Proven Growth</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">From Invisible to Unmissable</h3>
+                        <p class="text-slate-400 mb-6">Look at the trajectory. This isn't luck; it's a calculated strategy of optimizations, posts, and review management that drives interactions.</p>
+                        <div class="flex items-center gap-4">
+                            <div class="text-5xl font-bold text-white">61</div>
+                            <div class="text-sm text-slate-400">Profile Interactions<br>in single month</div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-white/10 shadow-2xl cursor-pointer" onclick="openModal('Portfolio/google-business-profile-interactions-local-seo-growth.jpg', 'Profile Interaction Growth')">
+                        <img src="Portfolio/google-business-profile-interactions-local-seo-growth.jpg" alt="Interaction Growth Graph" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews & Trust -->
+    <section id="reviews" class="py-24 bg-[#0B1120] border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-16">Trusted by Business Owners</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- GBP Visual Link -->
+                <a href="https://share.google/1s0xz2GLq00MlOS0L" target="_blank" class="glass-panel p-6 rounded-2xl text-center flex flex-col items-center justify-center h-full border border-indigo-500/30 group gbp-animated hover:border-indigo-400 transition-colors">
+                    <img src="Portfolio/gbp.jpg" alt="Google Reviews Badge" class="w-full max-w-[250px] object-contain mb-4 group-hover:scale-105 transition-transform">
+                    <div class="text-white font-bold text-sm bg-indigo-600 px-4 py-2 rounded-full flex items-center gap-2 group-hover:bg-indigo-500 transition-colors">
+                        <i class="fab fa-google"></i> View Live Profile
+                    </div>
+                </a>
+
+                <!-- Review 1 -->
+                <div class="glass-panel p-6 rounded-2xl border border-white/5 cursor-pointer" onclick="openModal('Portfolio/r1.jpg', 'Review by Khadijah Boyd')">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <img src="Portfolio/r1.jpg" alt="Review Text" class="w-full rounded-lg mb-4 opacity-90">
+                    <div class="font-bold text-white">Khadijah Boyd</div>
+                    <div class="text-xs text-slate-500">Humble Housekeeper, LLC (USA)</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-panel p-6 rounded-2xl border border-white/5 cursor-pointer" onclick="openModal('Portfolio/r2.jpg', 'Review by Bisnu Ariya')">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <img src="Portfolio/r2.jpg" alt="Review Text" class="w-full rounded-lg mb-4 opacity-90">
+                    <div class="font-bold text-white">Bisnu Ariya</div>
+                    <div class="text-xs text-slate-500">Local Guide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High Volume FAQ -->
+    <section id="faq" class="py-24">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="glass-panel p-6 rounded-2xl">
+                    <h3 class="font-bold text-lg text-white mb-2 flex items-center gap-2"><i class="fas fa-question-circle text-indigo-500"></i> How long does it take to rank on Maps?</h3>
+                    <p class="text-slate-400 text-sm">While every niche is different, my clients typically see significant movement within <strong>30 to 90 days</strong>. My recent UK project hit #1 in just 30 days.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl">
+                    <h3 class="font-bold text-lg text-white mb-2 flex items-center gap-2"><i class="fas fa-question-circle text-indigo-500"></i> What exactly do you do?</h3>
+                    <p class="text-slate-400 text-sm">I handle everything: <strong>Keyword Research</strong>, GBP Optimization, Citation Building, Review Management, and on-page tweaks. You focus on your business; I handle the traffic.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl">
+                    <h3 class="font-bold text-lg text-white mb-2 flex items-center gap-2"><i class="fas fa-question-circle text-indigo-500"></i> Do I need a website to rank?</h3>
+                    <p class="text-slate-400 text-sm">Not strictly, but it helps massively. If you don't have one, I can help set up a high-converting landing page or optimize your free Google business site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-20 bg-black border-t border-white/10 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="Portfolio/logo.png" alt="Logo" class="w-10 h-10 object-contain">
+                        <span class="font-bold text-lg text-white tracking-tight">Apurbo <span class="text-indigo-500">Sutra Dhar</span></span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Helping small businesses worldwide dominate their local market with data-driven Local SEO strategies. No fluff, just results.
+                    </p>
+                    <div class="flex gap-4">
+                         <a href="https://www.linkedin.com/in/apurbo-sutra-dhar/" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-white hover:bg-indigo-600 transition-all"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="https://www.facebook.com/Mr.Apurbo09" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 transition-all"><i class="fab fa-facebook-f"></i></a>
+                         <a href="https://www.instagram.com/mr.apurbo09/" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-600 transition-all"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">My Services</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-indigo-400 transition-colors">On-Page SEO Optimization</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition-colors">Technical SEO Audits</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition-colors">Off-Page SEO & Citations</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition-colors">Google Maps Ranking</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition-colors">GBP Optimization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Quick Links</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#about" class="hover:text-indigo-400 transition-colors">About Me</a></li>
+                        <li><a href="#services" class="hover:text-indigo-400 transition-colors">Services</a></li>
+                        <li><a href="#mission" class="hover:text-indigo-400 transition-colors">My Mission</a></li>
+                        <li><a href="#success" class="hover:text-indigo-400 transition-colors">Success Stories</a></li>
+                        <li><a href="#reviews" class="hover:text-indigo-400 transition-colors">Client Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Connect</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope mt-1 text-indigo-500"></i>
+                            <a href="mailto:apurbosutradhar260@gmail.com" class="hover:text-white transition-colors">apurbosutradhar260@gmail.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fab fa-whatsapp mt-1 text-green-500"></i>
+                            <a href="https://wa.me/8801990234261" class="hover:text-white transition-colors">+880 1990-234261</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-indigo-500"></i>
+                            <span>Mymensingh, Bangladesh<br>(Serving Clients Globally)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-xs uppercase tracking-widest text-center md:text-left">&copy; 2026 Apurbo Sutra Dhar. Professional Freelancer.</p>
+                <div class="flex gap-6 text-xs text-slate-600 uppercase tracking-widest">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(src, captionText) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImg");
+            var caption = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = src;
+            caption.innerHTML = captionText;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
